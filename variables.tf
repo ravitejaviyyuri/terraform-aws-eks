@@ -137,7 +137,7 @@ variable "cluster_timeouts" {
 variable "create_kms_key" {
   description = "Controls if a KMS key for cluster encryption should be created"
   type        = bool
-  default     = true
+  default     = false
 }
 
 variable "kms_key_description" {
@@ -155,7 +155,7 @@ variable "kms_key_deletion_window_in_days" {
 variable "enable_kms_key_rotation" {
   description = "Specifies whether key rotation is enabled. Defaults to `true`"
   type        = bool
-  default     = true
+  default     = false
 }
 
 variable "kms_key_enable_default_policy" {
